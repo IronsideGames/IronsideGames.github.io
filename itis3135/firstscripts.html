@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Hernandez | Magic Horse's | First Scripts</title>
+    <!-- GOOGLE MATERIAL ICONS - https://developers.google.com/fonts/docs/material_icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- Scripts -->
+    <script src="scripts/defaultscripts.js"></script>
+</head>
+
+<body>
+    <div class="links1">
+        <header>
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="tables.html">HTML Tables</a> |
+                <a href="forms.html">HTML Forms</a> |
+                <a href="contract.html">Contract</a> |
+                <a href="website_evaluations.html">Website Evaluations</a> |
+                <a href="stuff/iRonsid3 gඞmEs.htm">CRAPPY Webpage</a> |
+                First Scripts
+            </nav>
+            <h1>ITIS-3155-091 - Miguel</h1>
+        </header>
+    </div>
+    <main>
+        <h2>First JavaScripts - EX. Activity #05 - First JavaScripts</h2>
+        <!-- Date and time -->
+        <h3 class="fs2">
+            <script>
+                var today = new Date();
+                var time = new Date();
+                document.write('Today is ')
+                document.write(time.toLocaleTimeString());
+                document.write(' ');
+                document.write(today.toDateString());
+            </script>
+        </h3>
+        <div class="fs">
+            <!-- Name and mood -->
+            <p><strong>Hello there!</strong></p>
+            <p>What is your name? <input type="text" id="name"></p>
+            <p>How are you feeling today? <input type="text" id="feeling"></p>
+            <button onclick="welcomeMessage();">Submit</button>
+            <p id="greetings"></p>
+        </div>
+        <div class="fs">
+            <!-- Bounty -->
+            <p><strong>Set a bounty</strong></p>
+            <p>Name <input type="text" id="bountyName"></p>
+            <p>Price <input type="text" id="bountyPrice"></p>
+            <button onclick="bounty();">Set bounty</button>
+            <p id="bountyMessage"></p>
+        </div>
+        <div class="fs">
+            <!-- Debt -->
+            <p><strong>Wanna get rid of your debt?</strong></p>
+            <p id="debt">Current debt: $145,230,102</p>
+            <button onclick="clearDebt();">Clear debt</button>
+            <p id="debtMessage"></p>
+        </div>
+        <div class="fs">
+            <!-- Tax -->
+            <p><strong>Calculate tax</strong></p>
+            <p>Total price of product <input type="text" id="productPrice"></p>
+            <button onclick="tax();">Calculate product cost</button>
+            <p id="finalProductcost"></p>
+        </div>
+        <div class="fs">
+            <!-- Multiply -->
+            <p><strong>Multiply</strong></p>
+            <p>Number 1: <input type="text" id="num1"></p>
+            <p>Number 2: <input type="text" id="num2"></p>
+            <button onclick="multiply();">Let's multiply</button>
+            <p id="numTotal"></p>
+        </div>
+        <div class="fs">
+            <!-- Customer Support -->
+            <p><strong>Customer Support</strong></p>
+            <button onclick="support();">Connect with Hernandez Syndicate</button>
+            <p id="customerSupport"></p>
+        </div>
+    </main>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+            <img src="images/button-validation-html5.png" width="131" height="45" alt="Validate webpage HTML."
+                class="center" />
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+            <img src="images/button-validation-css.png" width="131" height="45" alt="Validate webpage CSS."
+                class="center" />
+        </a>
+        Copyright <a href="hernandezsyndicate/index.html">Hernandez Syndicate</a> 2023 - All Rights Reserved
+    </footer>
+
+    <!-- HTML Include function call & jQuery console log write -->
+    <script>
+        // this runs the HTMLInclude function to replace the header and footer content
+        window.addEventListener('load', (event) => {
+            console.log('page is fully loaded... doing HTMLInclude replacements');
+            HTMLInclude();
+        });
+        // jQuery console write to confirm jQuery is loaded
+        $(document).ready(function () {
+            console.log("jQuery version: " + $.fn.jquery + " loaded.");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+body {
+    color: #E5E5E5;
+    background-color: blue;
+    font-family: "Outfit";
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: "Outfit";
+}
+
+/* Link/Nav related styling */
+a {
+    color: #FCA311;
+    text-decoration: none;
+    font-family: "Outfit";
+}
+
+a:hover {
+    background-color: #484E69;
+}
+/* End of Link/Nav related styling */
+
+table {
+    margin-top: 20px;
+    font-family: "Outfit";
+}
+
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table#complex tr:nth-child(odd) {
+    background-color: #999;
+    color: #fff;
+}
+
+table#complex tr:nth-child(even) {
+    background-color: #777;
+    color: #fff;
+}
+
+/* Footer related styling */
+footer {
+    margin-top: 40px;
+    font-family: "Outfit";
+    text-align: center;
+}
+
+footer>a {
+    background-color: inherit;
+    text-decoration: none;
+}
+
+footer>a:hover {
+    background-color: inherit;
+}
+/* End of footer realted styling */
+
+.center-aligned {
+    text-align: center;
+}
+
+.links1 {
+    padding-top: 10px;
+    background-color: #14213D;
+    padding: 30px;
+    margin-bottom: 50px; 
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 20px;
+}
+
+.home {
+    text-align: center;
+}
+
+.goob1 {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.goob2 {
+    background-color: #484E69;
+    margin: 10px;
+    width: 500px;
+    height: 200px;
+    border-radius: 12px;
+    transition: 0.3s;
+    filter: blur(4px);
+}
+
+.goob2:hover {
+    transform: translate(0, -10px);
+    filter: blur(0);
+}
+
+.fs {
+    text-align: center;
+    background-color: #484E69;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 12px;
+}
+.fs2 {
+    text-align: center;
+}
+
+.polygon {
+    text-align: center;
+    background-color: #484E69;
+    padding: 30px;
+    margin: 100px;
+    border-radius: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.calculator {
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+}
+
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+.button {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal {
+    background-color: #5555ff;
+    color: white;
+}
+
+.button:hover {
+    background-color: #323330;
+    color: white;
+}

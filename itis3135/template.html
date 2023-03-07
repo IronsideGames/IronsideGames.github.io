@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template with Navigation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navLinks">Nav Links Here</nav>
+        <h1>Template with Navigation</h1>
+    </header>       
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita molestias aperiam velit possimus, quidem tenetur inventore adipisci cumque, necessitatibus quam porro nam qui vero ex beatae provident quae! Placeat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita molestias aperiam velit possimus, quidem tenetur inventore adipisci cumque, necessitatibus quam porro nam qui vero ex beatae provident quae! Placeat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita molestias aperiam velit possimus, quidem tenetur inventore adipisci cumque, necessitatibus quam porro nam qui vero ex beatae provident quae! Placeat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita molestias aperiam velit possimus, quidem tenetur inventore adipisci cumque, necessitatibus quam porro nam qui vero ex beatae provident quae! Placeat?</p>
+        
+    </main>
+    <footer>Copyright + Some Stuff</footer>
+    <script>
+        $(function() {
+            console.log(location.pathname.split("/").splice(-1));
+            const pathname = String(location.pathname.split("/").splice(-1));
+            const links = {
+                "1": {
+                    "url": "index.html",
+                    "text": "Home",
+                    "alt": "Example Homepage"
+                },
+                "2": {
+                    "url": "template.html",
+                    "text": "Template Page",
+                    "alt": "Template Link"
+                },
+                "3": {
+                    "url": "contract.html",
+                    "text": "Contract",
+                    "alt": "Contract link"
+                }
+            };
+
+            const linkSeperator = " | ";
+            let htmlString = "";
+
+            for(var id in links) {
+                if (pathname === links[id]['url']) {
+                    htmlString += links[id]['text'];
+                } else {
+                    htmlString += '<a href="' + links[id]['url'] + '">' + links[id]['text'] + '</a>'
+                }
+                if (Number(id) < Object.keys(links).length) {
+                    htmlString += linkSeperator;
+                }
+            }
+
+            $('#navLinks').html(htmlString);
+        });
+
+
+    </script>
+</body>
+</html>

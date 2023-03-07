@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Hernandez | Magic Horse's | Website Evalulations</title>
+    <!-- GOOGLE MATERIAL ICONS - https://developers.google.com/fonts/docs/material_icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JQuery 3.6.1 FROM GOOGLE CDN - https://developers.google.com/speed/libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <div class="links1">
+        <header>
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="tables.html">HTML Tables</a> |
+                <a href="forms.html">HTML Forms</a> |
+                <a href="contract.html">Contract</a> |
+                Website Evaluations |
+                <a href="stuff/iRonsid3 gඞmEs.htm">CRAPPY Webpage</a> |
+                <a href="firstscripts.html">First Scripts</a>
+            </nav>
+            <h1>ITIS-3155-091 - Miguel</h1>
+        </header>
+    </div>
+    <main>
+        <h2>Website Evaluations</h2>
+        <section>
+            <h3><a style="text-decoration: none" href="https://torontocupcake.com/contact.html">Toronto Cupcake</a></h3>
+            <p>Toronto Cupcake is a website that allows you to place delivery orders for cupcakes. It showcases the
+                various cupcakes they sell for certain events or just casual consumption.</p>
+            <ul style="list-style-type:circle;">
+                <li><strong>C:</strong> This website does not follow princple C. You can see various fonts and size that
+                    don't match together. All links still contain their underline which would look better without it.
+                    Spacing between the elements seems to vary and be very inconsistent throughout the various pages.
+                    Some text seems to be very close to other blocks of elements. Many of shapes also seem badly mixed
+                    together unevenly.
+                </li>
+                <li><strong>R:</strong> I see some repetition throughout the pages as far as color. Text size and fonts
+                    seems to vary from page to page though.</li>
+                <li><strong>A:</strong> I believe alignment seems to be a very big issue throughout the pages of this
+                    website. Pictures and blocks of texts are often placed in spots where
+                    they don't look good in. Some lines of text also seemed to be aligned incorrectly in various spots
+                </li>
+                <li><strong>P:</strong> One thing I notice is that the main logo at the top of website is unnecessarily
+                    repeated.</li>
+            </ul>
+        </section>
+        <section>
+            <h3><a style="text-decoration: none" href="https://www.flyhyer.com">Hyer</a></h3>
+            <p>Hyer is a private jet rental company with a website that allows users to book flights</p>
+            <ul style="list-style-type:circle;">
+                <li><strong>C:</strong> Important elements stand out throughout the website while keep less important
+                    elements muted. Color and fonts keep the website looking dynamic to the eye.
+                    Text blocks are correctly placed along with proper spacing and alignment.
+                </li>
+                <li><strong>R:</strong> Images on the website along with animations are eye catching and fits well
+                    together.</li>
+                <li><strong>A:</strong> Everything is aligned well and everything makes clean and clear along with a
+                    sophisticated look.</li>
+                <li><strong>P:</strong> Proximity seems to be no issue. Everything that relates to one another is within
+                    its on block.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+            <img src="images/button-validation-html5.png" width="131" height="45" alt="Validate webpage HTML."
+                class="center" />
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+            <img src="images/button-validation-css.png" width="131" height="45" alt="Validate webpage CSS."
+                class="center" />
+        </a>
+        Copyright <a href="hernandezsyndicate/index.html">Hernandez Syndicate</a> 2023 - All Rights Reserved
+    </footer>
+
+    <!-- HTML Include function call & jQuery console log write -->
+    <script>
+        // this runs the HTMLInclude function to replace the header and footer content
+        window.addEventListener('load', (event) => {
+            console.log('page is fully loaded... doing HTMLInclude replacements');
+            HTMLInclude();
+        });
+        // jQuery console write to confirm jQuery is loaded
+        $(document).ready(function () {
+            console.log("jQuery version: " + $.fn.jquery + " loaded.");
+        });
+    </script>
+</body>
+
+</html>

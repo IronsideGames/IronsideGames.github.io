@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Hernandez | Magic Horse's | HTML Forms</title>
+    <!-- GOOGLE MATERIAL ICONS - https://developers.google.com/fonts/docs/material_icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JQuery 3.6.1 FROM GOOGLE CDN - https://developers.google.com/speed/libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Main font-->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <div class="links1">
+        <header>
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="tables.html">HTML Tables</a> |
+                HTML Forms |
+                <a href="contract.html">Contract</a> |
+                <a href="website_evaluations.html">Website Evaluations</a> |
+                <a href="stuff/iRonsid3 gඞmEs.htm">CRAPPY Webpage</a> |
+                <a href="firstscripts.html">First Scripts</a>
+            </nav>
+            <h1>ITIS-3155-091 - Miguel</h1>
+        </header>
+    </div>
+    <main>
+        <h2>HTML Forms - EX. Activity #03 - HTML Form</h2>
+
+        <form>
+            <h3>Employee Information Needed</h3>
+            <label for="fname">First name:</label><br>
+            <input type="test" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="test" id="lname" name="lname"><br>
+            <label for="pnum">Phone number:</label><br>
+            <input type="test" id="pnum" name="pnum"><br>
+            <label for="email">Email Address:</label><br>
+            <input type="test" id="email" name="email"><br>
+
+            <p>Please enter your gender</p>
+            <input type="checkbox" id="gender1" name="gender1" value="Male">
+            <label for="gender1">Male</label><br>
+            <input type="checkbox" id="gender2" name="gender2" value="Female">
+            <label for="gender2">Female</label><br>
+            <input type="checkbox" id="gender3" name="gender3" value="Other">
+            <label for="gender3">Other</label><br>
+
+            <p>Please enter marital status</p>
+            <input type="radio" id="marital1" name="maritalstatus" value="Single">
+            <label for="marital1">Single</label><br>
+            <input type="radio" id="marital2" name="maritalstatus" value="Married">
+            <label for="marital2">Married</label><br>
+            <input type="radio" id="marital3" name="maritalstatus" value="Widowed">
+            <label for="marital3">Widowed</label><br>
+            <input type="radio" id="marital4" name="maritalstatus" value="Divorced">
+            <label for="marital4">Divorced</label><br>
+
+            <p></p>
+            <for for="department">Choose your department:</for>
+            <select name="department" id="department">
+                <option value="businessdevelopment">Business Development</option>
+                <option value="salemarketing">Sales & Marketing</option>
+                <option value="development">Development</option>
+                <option value="testteam">Test Team</option>
+                <option value="architecture">Architecture</option>
+                <option value="operations">Operations</option>
+                <option value="customersupport">Customer Support</option>
+            </select>
+            <p></p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+    </main>
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+            <img src="images/button-validation-html5.png" width="131" height="45" alt="Validate webpage HTML."
+                class="center" />
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+            <img src="images/button-validation-css.png" width="131" height="45" alt="Validate webpage CSS."
+                class="center" />
+        </a>
+        Copyright <a href="hernandezsyndicate/index.html">Hernandez Syndicate</a> 2023 - All Rights Reserved
+    </footer>
+
+    <!-- HTML Include function call & jQuery console log write -->
+    <script>
+        // this runs the HTMLInclude function to replace the header and footer content
+        window.addEventListener('load', (event) => {
+            console.log('page is fully loaded... doing HTMLInclude replacements');
+            HTMLInclude();
+        });
+        // jQuery console write to confirm jQuery is loaded
+        $(document).ready(function () {
+            console.log("jQuery version: " + $.fn.jquery + " loaded.");
+        });
+    </script>
+</body>
+
+</html>

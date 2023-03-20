@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miguel Hernandez | Magic Horse's | Calculator</title>
+    <title>Miguel Hernandez | Magic Horse's | Arrays</title>
     <!-- GOOGLE MATERIAL ICONS - https://developers.google.com/fonts/docs/material_icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- JQuery 3.6.1 FROM GOOGLE CDN - https://developers.google.com/speed/libraries-->
@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
     <!-- Style Sheet -->
     <link rel="stylesheet" href="styles/default.css">
+    <!-- Scripts -->
+    <script src="scripts/arrays.js"></script>
 </head>
 
 <body>
@@ -23,51 +25,46 @@
                 <a href="tables.html">HTML Tables</a> |
                 <a href="forms.html">HTML Forms</a> |
                 <a href="contract.html">Contract</a> |
-                <a href="website_evaluations.html">Website Evaluations</a> |        
+                <a href="website_evaluations.html">Website Evaluations</a> |
                 <a href="firstscripts.html">First Scripts</a> |
                 <a href="polygons.html">Polygons</a> |
-                Calculator_Try |
+                <a href="calculator_try.html">Calculator_Try</a> |
                 <a href="calculator_fcc.html">Calculator_FCC</a> |
-                <a href="arrays.html">Arrays</a> |
+                Arrays |
                 <a href="slideshow.html">Slideshow</a>
             </nav>
             <nav>
                 <a href="stuff/iRonsid3 gඞmEs.htm">CRAPPY Webpage</a> |
                 <a href="Accessibility/hernandez-activity_accessibility.html">Accessibility</a>
+                
             </nav>
             <h1>ITIS-3155-091 - Miguel</h1>
         </header>
     </div>
     <main>
-        <h2>HTML Forms - EX. Activity #07 - Walk Thru A Calculator Build</h2>
+        <h2>Arrays - EX. Activity #08 - Arrays</h2>
 
-        <section>
-            <div class="container">
-                <div id="display"></div>
-                <div class="buttons">
-                    <div class="button">C</div>
-                    <div class="button">/</div>
-                    <div class="button">*</div>
-                    <div class="button">&larr;</div>
-                    <div class="button">7</div>
-                    <div class="button">8</div>
-                    <div class="button">9</div>
-                    <div class="button">-</div>
-                    <div class="button">4</div>
-                    <div class="button">5</div>
-                    <div class="button">6</div>
-                    <div class="button">+</div>
-                    <div class="button">1</div>
-                    <div class="button">2</div>
-                    <div class="button">3</div>
-                    <div class="button">.</div>
-                    <div class="button">(</div>
-                    <div class="button">0</div>
-                    <div class="button">)</div>
-                    <div id="equal" class="button">=</div>
-                </div>
-            </div>
-        </section>
+        <div class="arrays">
+            <select name="employees" id="employees">
+                <option value="0" selected>Hernandez Syndicate Employees</option>
+                <option value="1">Michael Hernandez</option>
+                <option value="2">Christopher Overstreet</option>
+                <option value="3">Luis Martinez</option>
+                <option value="4">Cole Overstreet</option>
+                <option value="5">John Michael Gulledge</option>
+                <option value="6">Gabriel Clark</option>
+                <option value="7">Fernando Gonzalez</option>
+            </select><br>
+            <p>Display salary average and highest employee salary</p>
+            <input type="button" value="Results" onclick="displayResults()"><br>
+            <p>Display employee salaries</p>
+            <input type="button" value="Employee Salaries" onclick="displaySalary();"><br>
+            <p>Add new employee information</p>
+            <input type="text" placeholder="Employee Name" id="newEmployeeName"><br>
+            <input type="text" placeholder="Employee Salary" id="newEmployeeSalary"><br>
+            <input type="button" value="Add New Employee" onclick="addSalary();">
+            <div id="results"></div>
+        </div>
 
     </main>
     <footer>
@@ -82,8 +79,7 @@
         </a>
         Copyright <a href="hernandezsyndicate/index.html">Hernandez Syndicate</a> 2023 - All Rights Reserved
     </footer>
-    <!-- Scripts -->
-    <script src="scripts/calculator_try.js"></script>
+
 </body>
 
 </html>

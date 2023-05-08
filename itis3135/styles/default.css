@@ -11,7 +11,7 @@ h2 {
     font-family: "Outfit";
 }
 
-/* Link/Nav related styling */
+/* Navigation bar related styling */
 a {
     color: #FCA311;
     text-decoration: none;
@@ -22,9 +22,13 @@ a:hover {
     background-color: #484E69;
 }
 
-/* End of Link/Nav related styling */
+hr {
+    border: 1px solid #E5E5E5;
+}
 
-/* Table page related styling */
+/* End of Navigation styling */
+
+/* Tables related styling */
 table {
     margin-top: 20px;
     font-family: "Outfit";
@@ -48,7 +52,7 @@ table#complex tr:nth-child(even) {
     color: #fff;
 }
 
-/* End of table page related styling */
+/* End of Tables related styling */
 
 /* Footer related styling */
 footer {
@@ -82,9 +86,11 @@ footer>a:hover {
 
 
 .center {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    
+    
 }
 
 nav {
@@ -97,7 +103,7 @@ nav {
     text-align: center;
 }
 
-/* Home page related styling */
+/* Index related styling */
 .goob1 {
     display: flex;
     flex-direction: row;
@@ -118,9 +124,9 @@ nav {
     transform: translate(0, -10px);
 }
 
-/* End of home page related styling */
+/* End of Index related styling */
 
-/* First scripts page related styling */
+/* Scripts related styling */
 .fs {
     text-align: center;
     background-color: #14213D;
@@ -134,9 +140,9 @@ nav {
     text-align: center;
 }
 
-/* End of first scripts page related styling */
+/* End of Scripts related styling */
 
-/* Polygon page related styling */
+/* Polygons related styling */
 .polygon {
     text-align: center;
     background-color: #14213D;
@@ -148,9 +154,9 @@ nav {
     margin-bottom: auto;
 }
 
-/* End of polygon page related styling */
+/* End of Polygons related styling */
 
-/* Calculator realted styling */
+/* Calculator related styling */
 .calculator {
     text-align: center;
 }
@@ -199,7 +205,7 @@ nav {
     color: white;
 }
 
-/* End of Calculator realted styling */
+/* End of Calculator related styling */
 
 /* Arrays related styling */
 .arrays {

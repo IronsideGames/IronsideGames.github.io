@@ -1,0 +1,160 @@
+/* Part 1 related styling */
+body {
+    color: #383636;
+    background-color: #806F66;
+    font-family: "Outfit";
+    margin: 0 auto;
+    max-height: 10000px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Outfit";
+    color: #FF0000;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Outfit";
+    color: #FF0000;
+}
+
+.title a {
+    color: #FE7F2D;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation bar related styling */
+a {
+    color: #B6AD90;
+    text-decoration: none;
+    font-family: "Outfit";
+}
+
+hr {
+    border: 1px solid #FE7F2D;
+}
+
+.titles {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.links1 {
+    padding-top: 10px;
+    background-color: #383636;
+    color: #A68A64;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+nav {
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 20px;
+}
+
+/* End of Navigation styling */
+
+/* Footer related styling */
+footer {
+    margin-top: 40px;
+    font-family: "Outfit";
+    text-align: center;
+    color: #383636;
+    font-size: 24px;
+}
+
+footer>a {
+    background-color: inherit;
+    text-decoration: none;
+    color: #FE7F2D;
+    font-size: 24px;
+}
+
+footer>a:hover {
+    background-color: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* End of footer realted styling */
+
+/* Section hiding */
+.auto-hide {
+    width: 100%;
+}
+
+.auto-hide section {
+    position: relative;
+    padding: 15px 0;
+}
+
+.auto-hide section a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 4px solid #FE7F2D;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.autohide .sub a .autohide .sub span {
+    display: block;
+    border-bottom: none;
+    margin: 15px 30px;
+    text-decoration: none;
+    color: navy;
+}
+
+.auto-hide .sub {
+    overflow: hidden;
+    transition: max-height .5s;
+    max-height: 0;
+}
+
+.auto-hide section:target .sub {
+    max-height: 1000px;
+}
+
+.auto-hide section a::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 25px;
+    margin-top: -3px;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #FE7F2D transparent;
+}
+
+.auto-hide section:target a::after {
+    border-width: 6px 6px 0 6px;
+}
+
+/* End of section hiding */
+
+/* End of Part 1 related styling */
